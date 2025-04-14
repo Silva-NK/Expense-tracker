@@ -1,5 +1,7 @@
 import { useState } from "react";
 import { v4 as uuidv4 } from "uuid";
+import './ExpenseForm.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function ExpenseForm ({ onAddExpense }) {
     const [expense, setExpense] = useState({
@@ -29,11 +31,13 @@ function ExpenseForm ({ onAddExpense }) {
 
     return (
         <form onSubmit={handleSubmit}>
-            <h2>Add Expense</h2>
-            <p>Enter your expense details below.</p>
+            <h2 className="form-header">Add Expense</h2>
+            <p className="form-subtitle">Enter your expense details below.</p>
+
             <input
                type="text"
                name="name"
+               className="form-input" 
                placeholder="Enter Expense Name"
                value={expense.name}
                onChange={handleChange}
@@ -43,13 +47,14 @@ function ExpenseForm ({ onAddExpense }) {
             <input
                type="text"
                name="description"
+               className="form-input" 
                placeholder="Enter Expense Description"
                value={expense.description}
                onChange={handleChange}
                required
             />
 
-            <select name="category" value={expense.category} onChange={handleChange} required>
+            <select name="category" className="form-input"  value={expense.category} onChange={handleChange} required>
                 <option value="">Select Expense Category</option>
                 <option value="Food">Food</option>
                 <option value="Transport">Transport</option>
@@ -63,6 +68,7 @@ function ExpenseForm ({ onAddExpense }) {
             <input
                type="number"
                name="amount"
+               className="form-input" 
                placeholder="Enter Expense Amount"
                value={expense.amount}
                onChange={handleChange}
@@ -72,13 +78,14 @@ function ExpenseForm ({ onAddExpense }) {
             <input
                type="date"
                name="date"
+               className="form-input" 
                placeholder="Enter Date of Expense"
                value={expense.date}
                onChange={handleChange}
                required
             />
 
-            <button type="submit">Submit Expense</button>
+            <button type="submit" className="submit-btn">Submit Expense</button>
         </form>
     );
 }
