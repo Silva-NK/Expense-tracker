@@ -66,7 +66,7 @@
     background: rgba(255, 255, 255, 0.1);
     border: 1px solid #444;
     border-radius: 6px;
-    color: white !important; /* Force white text */
+    color: white !important;
     appearance: none;
     cursor: pointer;
     width: 100%;

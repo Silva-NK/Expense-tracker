@@ -68,3 +68,14 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+# PROJECT LINKS
+This project has been deployed using Vercel.
+
+[See deployed project here.](https://expense-tracker-git-master-silva-nks-projects.vercel.app)
+
+This project also is housed is a github repository.
+
+[Visit Git Repository.](https://github.com/Silva-NK/Expense-tracker)
+
+Intellectual Property of Suzanne Kiago. All Rights Reserved.
